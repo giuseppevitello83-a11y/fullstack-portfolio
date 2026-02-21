@@ -5,11 +5,11 @@
             "root": "backend",
             "restartPolicyType": "ON_FAILURE",
             "variables": {
-                "MYSQLHOST": "${{MySQL.MYSQLHOST}}",
-                "MYSQLPORT": "${{MySQL.MYSQLPORT}}",
-                "MYSQLDATABASE": "${{MySQL.MYSQLDATABASE}}",
-                "MYSQLUSER": "${{MySQL.MYSQLUSER}}",
-                "MYSQLPASSWORD": "${{MySQL.MYSQLPASSWORD}}",
+                "MYSQLHOST": "${{mysql.MYSQLHOST}}",
+                "MYSQLPORT": "${{mysql.MYSQLPORT}}",
+                "MYSQLDATABASE": "${{mysql.MYSQLDATABASE}}",
+                "MYSQLUSER": "${{mysql.MYSQLUSER}}",
+                "MYSQLPASSWORD": "${{mysql.MYSQLPASSWORD}}",
                 "JWT_SECRET": "a-very-long-and-secure-random-secret-key-for-portfolio",
                 "ALLOWED_ORIGINS": "https://${{frontend.RAILWAY_PUBLIC_DOMAIN}}"
             }
