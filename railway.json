@@ -5,11 +5,7 @@
             "source": {
                 "directory": "backend"
             },
-            "build": {
-                "builder": "NIXPACKS"
-            },
             "deploy": {
-                "startCommand": "./mvnw spring-boot:run",
                 "healthcheckPath": "/api/auth/login",
                 "restartPolicyType": "ON_FAILURE"
             }
@@ -17,9 +13,6 @@
         "frontend": {
             "source": {
                 "directory": "frontend"
-            },
-            "build": {
-                "builder": "NIXPACKS"
             }
         }
     }
