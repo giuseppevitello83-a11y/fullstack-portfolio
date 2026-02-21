@@ -1,14 +1,13 @@
 # Ignore Maven build
 backend/target/
-backend/.mvn/
 
 # Ignore Node modules
 frontend/node_modules/
 frontend/dist/
 
 # Ignore IDE files
-.idea/
 *.iml
+.idea/
 .vscode/
 *.class
 
@@ -33,7 +32,8 @@ backend/java_paths.txt
 backend/app_startup.log
 backend/run_log.txt
 
-# Maven Wrapper
-!backend/.mvn/wrapper/maven-wrapper.jar
+# Maven Wrapper - Allow essential files
 !backend/mvnw
 !backend/mvnw.cmd
+!backend/.mvn/wrapper/maven-wrapper.jar
+!backend/.mvn/wrapper/maven-wrapper.properties
