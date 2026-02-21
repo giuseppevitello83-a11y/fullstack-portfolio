@@ -1,0 +1,39 @@
+# Ignore Maven build
+backend/target/
+backend/.mvn/
+
+# Ignore Node modules
+frontend/node_modules/
+frontend/dist/
+
+# Ignore IDE files
+.idea/
+*.iml
+.vscode/
+*.class
+
+# Ignore env
+.env
+*.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Large Binaries & Distributions
+backend/jdk-17.0.10+7/
+backend/apache-maven-3.9.6/
+backend/*.zip
+backend/build_log.txt
+backend/build_log_retry.txt
+backend/java_paths.txt
+backend/app_startup.log
+backend/run_log.txt
+
+# Maven Wrapper
+!backend/.mvn/wrapper/maven-wrapper.jar
+!backend/mvnw
+!backend/mvnw.cmd
