@@ -2,18 +2,14 @@
     "$schema": "https://railway.app/railway.schema.json",
     "services": {
         "backend": {
-            "source": {
-                "directory": "backend"
-            },
+            "root": "backend",
             "deploy": {
                 "healthcheckPath": "/api/auth/login",
                 "restartPolicyType": "ON_FAILURE"
             }
         },
         "frontend": {
-            "source": {
-                "directory": "frontend"
-            }
+            "root": "frontend"
         }
     }
 }
